@@ -5,7 +5,34 @@
 html {
   scroll-behavior: smooth;
 }
+.celular {
+  height: 20px;
+  background-color: gold;
+}
 
+.mostrar {
+  display: block;
+}
+
+.esconder {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .celular {
+    background-color: aqua;
+  }
+  .esconder {
+    display: block;
+  }
+  .mostrar {
+    display: none;
+  }
+}
+
+.linha-dentro {
+  padding: 10px;
+}
 .background-section {
   background-attachment: fixed;
   background-size: cover;
@@ -21,7 +48,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  scroll-padding-block-start: 55px;
 }
 .section-one {
   background-image: url(../assets/4108405.png);
